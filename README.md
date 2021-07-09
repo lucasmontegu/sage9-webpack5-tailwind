@@ -92,7 +92,7 @@ Edit `app/setup.php` to enable or disable theme features, setup navigation menus
 ```shell
 You will need to git clone the repo branch:
 
-git clone --branch 9-webpack5-tailwind2 git@github.com:lucasmontegu/sage.git theme_name
+git clone --branch 9-webpack5-tailwind2 git@github.com:lucasmontegu/sage9-webpack5-tailwind.git theme_name
 changing “theme_name” to your desired name
 
 and update your devUrl and proxyUrl in config.json here:
