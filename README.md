@@ -88,6 +88,28 @@ Edit `app/setup.php` to enable or disable theme features, setup navigation menus
   * `devUrl` should reflect your local development hostname
   * `publicPath` should reflect your WordPress folder structure (`/wp-content/themes/sage` for non-[Bedrock](https://roots.io/bedrock/) installs)
 
+### Clone and config
+```shell
+You will need to git clone the repo branch:
+
+git clone --branch 9-webpack5-tailwind2 git@github.com:lucasmontegu/sage.git theme_name
+changing “theme_name” to your desired name
+
+and update your devUrl and proxyUrl in config.json here:
+theme/resources/assets/config.json
+
+and proxyURL here:
+assets/build/config.js
+
+Then run from the root of the theme folder:
+yarn && yarn build
+
+Then run from the root of the theme folder:
+composer install
+
+That should get you up and running. This fork includes postcss-nesting so scss is not supported.
+```
+
 ### Build commands
 
 * `yarn start` — Compile assets when file changes are made, start Browsersync session
@@ -97,7 +119,7 @@ Edit `app/setup.php` to enable or disable theme features, setup navigation menus
 ## Documentation
 
 * [Sage documentation](https://roots.io/sage/docs/)
-* [Controller documentation](https://github.com/soberwp/controller#usage)
+  * [Controller documentation](https://github.com/soberwp/controller#usage)
 
 ## Contributing
 
